@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'YoshisIsland';
+  src: url("../public/fonts/SMW2-Yoshis-Island.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-image: url("../public/Background1.jpg");
+  background-size: cover;
+  font-family: 'YoshisIsland', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img{
+  width: 10vw;
+  height: 15vh;
+}
+
+header h1{
+  font-size: 52px;
+}
+
+.toggle-wrapper {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+}
+
+.flashbang {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  background-image: url("../public/Crybaby.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.dropzone {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  outline: none;
+
+  input {
+    outline: none;
+  }
+}
+
+.die-video,
+.Chomp-video {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  object-fit: cover;
+  display: none;
+}
+
+.Chomp-video {
+  background-image: url(../public/Chomp.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,36 @@
+.board {
+  background-color: white;
+  background-image: url("Background.png");
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: 'YoshisIsland', sans-serif;
+
+  // .pause {
+  //   position: fixed;
+  //   bottom: 12px;
+  //   left: 12px;
+  //   background-color: white;
+  //   padding: 24px;
+  //   cursor: pointer;
+  // }
+
+  .score {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #000;
+  }
+
+  .death {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    color: #000;
+  }
+}

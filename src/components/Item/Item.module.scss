@@ -1,0 +1,15 @@
+.item{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+
+    &_trap{
+        background-image: url("trap.png");
+    }
+
+    &_food{
+        background-image: url("food.png");
+    }
+}
+
+
